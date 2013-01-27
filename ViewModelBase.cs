@@ -3,7 +3,7 @@ using System;
 using System.ComponentModel;
 using System.Linq.Expressions;
 
-namespace WPFStockTicker
+namespace Snippets
 {
     public class ViewModelBase : INotifyPropertyChanged
     {
