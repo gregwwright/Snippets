@@ -1,0 +1,55 @@
+﻿@charset "utf-8";
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	font: 100% Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+	color: #fff;
+	background: #46613E;
+}
+#display {
+	width: 800px;
+	margin: 10px auto;
+	color: #fff;
+	background: #46613E;
+}
+h1 {
+	font-size: large;
+}
+h2 {
+	margin-top: 1.5em;
+	margin-bottom: .5em;
+	font-size: medium;
+}
+.bannerDiv {
+	background: url(../images/flowers-2.jpg) no-repeat center center;
+	width: 600px;
+	height: 100px;
+	font-size: 50px;
+	font-weight: bold;
+	padding: 25px;
+	color: hsl(84, 56%, 12%); /* #23310E; */
+}
+.bannerDiv #opacity_1 {
+	background-color: rgb(100%, 100%, 100%);
+	width: 475px;
+	padding: 10px 25px;
+}
+.bannerDiv #opacity_2 {
+	background-color: rgb(100%, 100%, 100%); /*for IE8 and earlier */
+	background-color: rgba(255, 255, 255, .5);
+	width: 475px;
+	padding: 10px 25px;
+}
+.bannerDiv #opacity_3 {
+	background-color: rgb(255, 255, 255);
+	opacity: 0.5;
+	width: 475px;
+	padding: 10px 25px;
+}
+.comment {
+	color: #CCC;
+	font-weight: normal;
+}

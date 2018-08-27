@@ -1,0 +1,221 @@
+﻿@charset "utf-8";
+
+/*
+@font-face {
+    font-family: 'jenna_sueregular';
+    src: url('../fonts/JennaSue-webfont.eot');
+    src: url('../fonts/JennaSue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/JennaSue-webfont.woff') format('woff'),
+         url('../fonts/JennaSue-webfont.ttf') format('truetype'),
+         url('../fonts/JennaSue-webfont.svg#jenna_sueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+/*
+@font-face {
+    font-family: 'quicksandbold';
+    src: url('../fonts/quicksand-bold-webfont.eot');
+    src: url('../fonts/quicksand-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand-bold-webfont.woff') format('woff'),
+         url('../fonts/quicksand-bold-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-bold-webfont.svg#quicksandbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+*/
+
+body {
+	background-color: #562D00;
+	background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(253,214,158,1.00)),color-stop( 100% , rgba(86,45,0,1.00)));
+	background-image: -webkit-linear-gradient(270deg,rgba(253,214,158,1.00) 0%,rgba(86,45,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(253,214,158,1.00) 0%,rgba(86,45,0,1.00) 100%);
+	color: #ededed;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+#container {
+	padding: 10px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#container #textpage {
+	color: #003366;
+	background-color: #E7E7D1;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px 15px 15px 15px;
+	border-radius: 10px;
+	-webkit-box-shadow: 10px 10px 10px #333333;
+	box-shadow: 10px 10px 10px #333333;
+}
+#container #textpage p {
+	font-size: small;
+}
+
+#container #textpage .photoborder {
+	float: right;
+	background-color: #FFF;
+	width: 210px;
+	height: 210px;
+	padding: 0px;
+	border-color: #666666;
+	border-radius: 4px;
+	margin-left: 15px;
+	-webkit-box-shadow: 5px 5px 10px 0px #666;
+	box-shadow: 5px 5px 10px 0px #666;
+}
+#container #photostack {
+	height: 600px;
+}
+
+#container #photostack .photoborder {
+	background-color: #FFF;
+	width: 210px;
+	height: 210px;
+	padding: 0px;
+	float: left;
+	border-color: #666666;
+	border-radius: 4px;
+	margin: 15px;
+	color: #0000CC;
+	-webkit-box-shadow: 10px 10px 10px 0px #333333;
+	box-shadow: 10px 10px 10px 0px #333333;
+}
+#container #photostack .photo, #container #textpage .photo {
+	width: 200px;
+	height: 200px;
+	background-color: #E7E1D1;
+	margin: 5px;
+	-webkit-box-shadow: inset 0px 0px 2px 2px #999999;
+	box-shadow: inset 0px 0px 2px 2px #999999;
+}
+#container #photostack .photo img, #container #textpage .photo img  {
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+#container #photostack .photoborder .photo .photocaption, #container #textpage .photoborder .photo .photocaption {
+	font-family: jenna_sueregular, Segoe, Verdana, cursive;
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-top: 6px;
+	text-align: center;
+	/*font-size: 32px;
+    line-height: 0.7em*/
+}
+
+.travelDay {
+	display: block;
+   	font-size: xx-large;
+    /*
+   	font-size: 48px;
+    font-family: jenna_sueregular, Segoe, Verdana, cursive;
+     */
+}
+
+#textpage h1, #photostack h1 {
+    /*
+    font-family: quicksandbold, Segoe, Verdana, sans-serif;
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #2e50b0;*/
+
+    /*
+    -webkit-text-shadow: 0px 0px 2px #fff, 0px 0px 3px #090, 5px 5px 10px #333;
+	-moz-text-shadow: 0px 0px 2px #fff, 0px 0px 3px #090, 5px 5px 10px #333;
+
+	text-shadow: 0px 0px 2px #fff, 0px 0px 3px #090, 5px 5px 10px #333;*/
+
+}
+
+/*div.entry {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2;
+
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+
+    -webkit-column-rule: #2e50b0 dashed 1px;
+    -moz-column-rule:  #2e50b0 dashed 1px;
+    column-rule:  #2e50b0 dashed 1px;
+}*/
+
+
+
+
+#pic1 {
+	-webkit-transform: rotate(25deg) skew(-5deg);	
+	-moz-transform: rotate(25deg) skew(-5deg);	
+	-ms-transform: rotate(25deg) skew(-5deg);	
+	transform: rotate(25deg) skew(-5deg);
+	z-index: 100;
+	-mox-transition: all 1.0s;
+	-webkit-transition: all 1.0s;
+	transition: all 1.0s;
+}
+#pic2 {
+	-webkit-transform: rotate(-20deg) skew(5deg);	
+	-moz-transform: rotate(-20deg) skew(5deg);	
+	-ms-transform: rotate(-20deg) skew(5deg);	
+	transform: rotate(-20deg) skew(5deg);
+	z-index: 200;
+	-mox-transition: all 1.0s;
+	-webkit-transition: all 1.0s;
+	transition: all 1.0s;
+}
+#pic3 {
+	-webkit-transform: rotate(-10deg) skew(4deg) translate(20px, -20px);	
+	-moz-transform:rotate(-10deg) skew(4deg) translate(20px, -20px);	
+	-ms-transform:rotate(-10deg) skew(4deg) translate(20px, -20px);	
+	transform:  rotate(-10deg) skew(4deg) translate(20px, -20px);	
+	z-index: 300;
+	-mox-transition: all 1.0s;
+	-webkit-transition: all 1.0s;
+	transition: all 1.0s;
+}
+#pic4 {
+	-webkit-transform: rotate(15deg) skew(5deg) translateY(-25px);	
+	-moz-transform: rotate(15deg) skew(5deg) translateY(-25px);		
+	-ms-transform: rotate(15deg) skew(5deg) translateY(-25px);	
+	transform: rotate(15deg) skew(5deg) translateY(-25px);	
+	z-index: 400;
+	-mox-transition: all 1.0s;
+	-webkit-transition: all 1.0s;
+	transition: all 1.0s;
+}
+
+#pic1:hover {
+	-webkit-transform: rotate(0deg) skew(0deg) scale(1.5);	
+	-moz-transform:  rotate(0deg) skew(0deg) scale(1.5);	
+	-ms-transform:  rotate(0deg) skew(0deg) scale(1.5);	
+	transform:  rotate(0deg) skew(0deg) scale(1.5);
+	z-index: 1000;
+}
+#pic2:hover {
+	-webkit-transform: rotate(0deg) skew(0deg) scale(1.5);	
+	-moz-transform:  rotate(0deg) skew(0deg) scale(1.5);	
+	-ms-transform:  rotate(0deg) skew(0deg) scale(1.5);	
+	transform:  rotate(0deg) skew(0deg) scale(1.5);
+	z-index: 1000;
+}
+#pic3:hover {
+	-webkit-transform: rotate(0deg) skew(0deg) translate(0px, 0px) scale(1.5);	
+	-moz-transform: rotate(0deg) skew(0deg) translate(0px, 0px) scale(1.5);	
+	-ms-transform: rotate(0deg) skew(0deg) translate(0px, 0px) scale(1.5);	
+	transform:  rotate(0deg) skew(0deg) translate(0px, 0px) scale(1.5);	
+	z-index: 1000;
+}
+#pic4:hover {
+	-webkit-transform: rotate(0deg) skew(0deg) translateY(0px) scale(1.5);	
+	-moz-transform: rotate(0deg) skew(0deg) translateY(0px) scale(1.5);
+	-ms-transform:rotate(0deg) skew(0deg) translateY(0px) scale(1.5);	
+	transform: rotate(0deg) skew(0deg) translateY(0px) scale(1.5);	
+	z-index: 1000;
+}
+.center {
+	text-align: center;
+}

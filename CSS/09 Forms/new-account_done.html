@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>New Account</title>
+<link rel="stylesheet" href="css/new-account_done.css" media="screen">
+<!--[if lte IE 7]><link rel="stylesheet" href="css/new-account_ie7.css" media="screen" /><![endif]-->
+</head>
+<body>
+<div class="container">
+  <h1> New Account </h1>
+  <div class="form-container">
+    <p> <strong class="mandatory">*</strong> Denotes fields which are mandatory </p>
+    <form class="account" action="#">
+      <fieldset>
+        <legend><span>Contact details</span></legend>
+        <div>
+          <label for="name"><strong class="mandatory">*</strong> Name</label>
+          <input name="name" id="name" type="text" class="text-width">
+        </div>
+        <div>
+          <label for="email"><strong class="mandatory">*</strong> Email</label>
+          <input name="email" id="email" type="email" class="text-width">
+        </div>
+        <div>
+          <label for="phone"><strong class="mandatory">*</strong> Phone</label>
+          <input name="phone" id="phone" type="tel" class="text-width">
+        </div>
+        <div><span class="label-select">Date of birth</span>
+          <label for="birthdate" class="hidden">Birth date</label>
+          <select id="birthdate" name="birthdate">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+          <label for="birthmonth" class="hidden">Birth month</label>
+          <select id="birthmonth" name="birthmonth">
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+          </select>
+          <label for="birthyear" class="hidden">Birth year</label>
+          <select id="birthyear" name="birthyear">
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+            <option value="1994">1994</option>
+            <option value="1993">1993</option>
+            <option value="1992">1992</option>
+            <option value="1991">1991</option>
+            <option value="1990">1990</option>
+            <option value="1999">1989</option>
+            <option value="1998">1988</option>
+            <option value="1997">1987</option>
+            <option value="1996">1986</option>
+            <option value="1995">1985</option>
+            <option value="1994">1984</option>
+            <option value="1993">1983</option>
+            <option value="1992">1982</option>
+            <option value="1991">1981</option>
+            <option value="1990">1980</option>
+            <option value="1999">1979</option>
+            <option value="1998">1978</option>
+            <option value="1997">1977</option>
+            <option value="1996">1976</option>
+            <option value="1995">1975</option>
+            <option value="1994">1974</option>
+            <option value="1993">1973</option>
+            <option value="1992">1972</option>
+            <option value="1991">1971</option>
+            <option value="1990">1970</option>
+            <option value="1999">1969</option>
+            <option value="1998">1968</option>
+            <option value="1997">1967</option>
+            <option value="1996">1966</option>
+            <option value="1995">1965</option>
+            <option value="1994">1964</option>
+            <option value="1993">1963</option>
+            <option value="1992">1962</option>
+            <option value="1991">1961</option>
+            <option value="1990">1960</option>
+            <option value="1999">1959</option>
+            <option value="1998">1958</option>
+            <option value="1997">1957</option>
+            <option value="1996">1956</option>
+            <option value="1995">1955</option>
+            <option value="1994">1954</option>
+            <option value="1993">1953</option>
+            <option value="1992">1952</option>
+            <option value="1991">1951</option>
+            <option value="1990">1950</option>
+            <option value="1999">1949</option>
+            <option value="1998">1948</option>
+            <option value="1997">1947</option>
+            <option value="1996">1946</option>
+            <option value="1995">1945</option>
+            <option value="1994">1944</option>
+            <option value="1993">1943</option>
+            <option value="1992">1942</option>
+            <option value="1991">1941</option>
+            <option value="1990">1940</option>
+          </select>
+        </div>
+        <div>
+          <label for="bio">Short bio</label>
+          <textarea id="bio" name="bio" rows="5" cols="30" class="text-width"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><span>Address</span></legend>
+        <div>
+          <label for="address1"><strong class="mandatory">*</strong> Address line 1</label>
+          <input name="address1" id="address1" type="text" class="text-width">
+        </div>
+        <div>
+          <label for="address2"><strong class="mandatory">*</strong> Address line 2</label>
+          <input name="address2" id="address2" type="text" class="text-width">
+        </div>
+        <div>
+          <label for="state"><strong class="mandatory">*</strong> State</label>
+          <input name="state" id="state" type="text" class="text-width">
+        </div>
+        <div>
+          <label for="country"><strong class="mandatory">*</strong> Country</label>
+          <select id="country" name="country">
+            <option value="" selected="selected">--- Choose a country ---</option>
+            <option value="United States">United States</option>
+            <option value="Canada">Canada</option>
+            <option value="Mexico">Mexico</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><span>Choose a password</span></legend>
+        <div>
+          <label for="password"><strong class="mandatory">*</strong> Password</label>
+          <input name="password" id="password" type="password" class="text-width">
+        </div>
+        <div>
+          <label for="confirm-password"><strong class="mandatory">*</strong> Confirm password</label>
+          <input name="confirm-password" id="confirm-password" type="password" class="text-width">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend><span>Terms and Conditions</span></legend>
+        <div id="accept_terms">
+          <label for="terms"class="label-checkbox"><strong class="mandatory">*</strong> Accept Terms</label>
+          <input name="terms" id="terms" type="checkbox"><span> &nbsp; &nbsp;ACCEPTED</</span>
+        </div>
+      </fieldset>
+      <div class="submit">
+        <input name="submit" type="submit" value="Create Account">
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>

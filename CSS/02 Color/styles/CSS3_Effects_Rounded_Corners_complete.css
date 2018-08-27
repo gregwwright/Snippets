@@ -1,0 +1,26 @@
+﻿@charset "utf-8";
+body {
+	text-align: center;
+	background-color: #FFFFCC;
+}
+#testbox {
+    background-color: #FFFF66;
+    color: #006600;
+    display: block;
+    width: 450px;
+    margin: 50px auto 0px;
+    padding: 15px;
+    border: 4px solid #006600;
+
+    border-radius: 25px;
+    border-radius: 50px 10px 30px 20px; /* individual corner radii */
+    border-radius: 50px / 10px; /* eliptical corners */
+    border-radius: 20% / 10%;
+    border-radius: 50%;
+  
+    background-clip: border-box;
+}
+
+#testbox #titletext {
+	font: bold 36px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}

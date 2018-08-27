@@ -1,0 +1,343 @@
+/* ------ Pared Down Reset Code ----- */
+
+html, body, ul, ol, li, form, fieldset, legend {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+fieldset, img {
+	border: 0;
+}
+legend {
+	color: #000;
+}
+input, textarea, select, button {
+	font-size: 100%;
+	line-height: 1.2;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+button {
+	width: auto;
+	overflow: visible;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+li {
+	list-style: none;
+}
+abbr, acronym {
+	border-bottom: .1em dotted;
+	cursor: help;
+}
+sup {
+	vertical-align: text-top;
+}
+sub {
+	vertical-align: text-bottom;
+}
+pre, code {
+	font-family: "Courier New", monospace, serif;
+	font-size: 100%;
+	line-height: 1.2;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* --- Elements ----------- */
+
+body {
+	color: #222;
+	background: #fff;
+	font: 100% Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* --- Container --------- */
+
+.container {
+	width: 80%; 
+    max-width: 42.5em;
+	margin: 1em auto;
+}
+/* --- Heading ----------- */
+
+h1 {
+	margin: 0;
+	padding: 10px 20px 15px;
+	border-radius: 6px 6px 0 0;
+	color: #fff;
+	background-color: #0018D4;
+	background-image: -webkit-gradient(linear, center bottom, center top, from(#0018D4), to(#00DDFF));
+	background-image: -moz-linear-gradient(0deg, #0018D4, #00DDFF);
+	background-image: linear-gradient(0deg, #0018D4, #00DDFF);
+	font-size: 160%;
+	font-weight: normal;
+    border: 1px solid #0018D4;
+}
+
+/* --- Form Container --------------- */
+.form-container {
+	padding: 0 20px 15px;
+	background-color: #eef;
+	border-radius:  0 0 6px 6px;
+	background-image: -webkit-gradient(linear, center bottom, center top, from(#cff), to(#fff));
+	background-image: -moz-linear-gradient(0deg, #cff, #fff);
+	background-image: linear-gradient(0deg, #cff, #fff);
+    border: 1px solid #0018D4;
+}
+.form-container p {
+	margin: 0;
+	padding: 0 0 10px 0;
+	font-size: 80%;
+    text-align: center;
+}
+
+/* ---Legend span ------- */
+
+.account legend span {
+	display: block;
+	width: 220px;
+	padding: 10px 0 10px 10px;
+	font-size: 110%;
+	font-weight: bold;
+    color: #0018D4;
+}
+
+
+/* --- Div ----------- */
+
+.account div {
+	margin: 0 0 4px;
+	padding: 4px 0;
+	border-radius: 6px;
+}
+.account div:hover, 
+.account div:focus {
+	background-color: #cff;
+}
+.account div input:focus, 
+.account div textarea:focus, 
+.account div select:focus {
+	border: #0018D4;
+	box-shadow: #3F3DFB 0 0 2px 2px;
+	background: #fff;
+}
+
+
+/* --- Special classes  --- */
+
+.hidden {
+	position: absolute;
+	left: -500em;
+}
+.mandatory {
+	color: red;
+}
+
+/* --- Label ------------- */
+
+.account label, .account .label-select {
+	float: none;
+    display: block;
+	width: 190px;
+	margin: 0;
+	padding: 5px 0 0;
+	text-align: left;
+}
+.account .label-checkbox {
+	padding: 2px 0 0;
+}
+
+/*--- Input --------------------*/ 
+
+.text-width {
+	width: 214px;
+	margin: 0;
+	padding: 2px;
+    border-radius: 6px;
+	border: 1px solid #0099CC;
+    -webkit-box-shadow: 2px 2px 2px #ccc;
+    -moz-box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+}
+select {
+    margin: 0;
+    padding: 3px;
+    border-radius: 6px;
+    border: 1px solid #0099CC;
+    background-clip: content-box;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 2px #ccc;
+    -moz-box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+}
+#country {
+	width: 220px;
+}
+
+/* --- Submit -------- */
+
+.account .submit {
+	width: 220px;
+	margin: 0;
+	padding: 20px 0 20px 10px;
+}
+.submit input {
+	margin: 0;
+	padding: 5px 20px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	border: 0 none;
+	color: #fff;
+	background-color: #0018D4;
+	background-image: -webkit-gradient(linear, center bottom, center top, from(#0018D4), to(#00DDFF));
+	background-image: -moz-linear-gradient(0deg, #0018D4, #00DDFF);
+	background-image: linear-gradient(0deg, #0018D4, #00DDFF);
+	font-size: 110%;
+}
+
+input[type=checkbox] + span {
+    display: none;
+}
+
+input[type=checkbox]:checked + span {
+    display: inline;
+    font-weight: bold;
+    color: green;
+}
+
+
+@media all and (min-width: 50em) {
+
+/* --- Container --------- */
+
+.container {
+}
+/* --- Heading ----------- */
+
+h1 {
+	-webkit-box-shadow: 0 5px 20px #999;
+	-moz-box-shadow: 0 5px 20px #999;
+	box-shadow: 0 5px 20px #999;
+}
+
+/* --- Form Container --------------- */
+.form-container {
+	-webkit-box-shadow: 0 5px 20px #999;
+	-moz-box-shadow: 0 5px 20px #999;
+	box-shadow: 0 5px 20px #999;
+}
+.form-container p {
+}
+
+/* ---Legend span ------- */
+
+.account legend span {
+	display: block;
+	width: 320px;
+	padding: 15px 0 10px 205px;
+	font-size: 125%;
+	font-weight: bold;
+    color: #0018D4;
+    text-shadow: 2px 2px 2px #ccc;
+}
+
+
+/* --- Div ----------- */
+
+.account div {
+	margin: 0 0 4px;
+	padding: 4px 0;
+	border-radius: 6px;
+}
+.account div:hover, 
+.account div:focus {
+	background-color: #cff;
+}
+.account div input:focus, 
+.account div textarea:focus, 
+.account div select:focus {
+	border: #0018D4;
+	box-shadow: #3F3DFB 0 0 2px 2px;
+	background: #fff;
+}
+
+
+/* --- Special classes  --- */
+
+.hidden {
+	position: absolute;
+	left: -500em;
+}
+.mandatory {
+	color: red;
+}
+
+/* --- Label ------------- */
+
+.account label, .account .label-select {
+	float: left;
+	width: 190px;
+	margin: 0 15px 0 0;
+	padding: 5px 0 0;
+	text-align: right;
+}
+.account .label-checkbox {
+	padding: 2px 0 0;
+}
+
+/*--- Input --------------------*/ 
+
+.text-width {
+	width: 312px;
+	margin: 0;
+	padding: 3px;
+    border-radius: 6px;
+	border: 1px solid #0099CC;
+    -webkit-box-shadow: 2px 2px 2px #ccc;
+    -moz-box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+	background-image: -webkit-gradient(linear, center bottom, center top, from(#fff 75%), to(#eee));
+	background-image: -moz-linear-gradient(0deg, #fff 75%, #eee);
+	background-image: linear-gradient(0deg, #fff 75%, #eee);
+}
+select {
+    margin: 0;
+    padding: 3px;
+    border-radius: 6px;
+    border: 1px solid #0099CC;
+    background-clip: content-box;
+    background-color: #fff;
+    -webkit-box-shadow: 2px 2px 2px #ccc;
+    -moz-box-shadow: 2px 2px 2px #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+	background-image: -webkit-gradient(linear, center bottom, center top, from(#fff 75%), to(#eee));
+	background-image: -moz-linear-gradient(0deg, #fff 75%, #eee);
+	background-image: linear-gradient(0deg, #fff 75%, #eee);
+}
+#country {
+	width: 320px;
+}
+
+/* --- Submit -------- */
+
+.account .submit {
+	width: 435px;
+	margin: 0;
+	padding: 20px 0 20px 205px;
+}
+.submit input {
+}
+
+}

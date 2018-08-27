@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Flex Layout Box Model</title>
+<style>
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular-webfont.eot');
+    src: url('../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('../fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font: 100% quicksandregular, Segoe, "Segoe UI", Verdana, sans-serif;
+	background: #333;
+	color: #FFF;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+}
+div, p {
+	margin: 0;
+}
+
+#wrapper {
+	width: 960px;
+	margin: 0 auto;
+	background: #fff;
+	color: #333;
+}
+#container {
+}
+
+#container div {
+	border: 2px solid #000;
+	padding: 20px;
+	width: 100px;
+	margin: 10px;
+}
+
+#one {
+	background-color: #F69;
+}
+
+#two {
+	background-color: #B083E9;
+}
+
+#three {
+	background-color: #4091EA;
+}
+
+#four {
+	background-color: #393;
+}
+
+#five {
+	background-color: #FF6;
+}
+</style>
+</head>
+
+<body>
+<h1>Flex Layout Box Model</h1>
+<div id="wrapper">
+  <div id="container">
+    <div id="one">
+      <p>First Child Box</p>
+    </div>
+    <div id="two">
+      <p>Second Child Box</p>
+    </div>
+    <div id="three">
+      <p>Third Child Box</p>
+    </div>
+    <div id="four">
+      <p>Fourth Child Box</p>
+    </div>
+    <div id="five">
+      <p>Fifth Child Box</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

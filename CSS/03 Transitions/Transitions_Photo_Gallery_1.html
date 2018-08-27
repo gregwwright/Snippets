@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Photo Gallery 1</title>
+<link href="css/Transitions_Photo_Gallery_1.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_DW_effectFade(obj,method,effect,speed)
+{
+    obj[method](effect, {}, speed);
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('images/TravelPhoto1.jpg','images/TravelPhoto2.jpg','images/travelphoto3.jpg','images/TravelPhoto4.jpg')">
+
+<div id="container">
+  <header><h1>My Travel Memories</h1></header>
+  <div class="pictureDisplay">
+<img src="images/TravelPhoto1.jpg"  alt="Santa Barbara Train Station" width="580" height="400"" id="photolarge" name-"photolarge /></div>
+  <div class="filmstrip">
+    <div id="topfilmdots"><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/></div>
+    
+    
+    <div id="thumbnails">
+      <div class="thumb"><img src="images/TravelPhoto1-sm.jpg"  alt="Santa barbara Station" width="137" height="95"  id="thumb1" onClick="MM_swapImage('photolarge','','images/TravelPhoto1.jpg',1)" /></div>
+      <div class="thumb"><img src="images/TravelPhoto2-sm.jpg"  alt="At the tracks" width="137" height="95" id="thumb2" onClick="MM_swapImage('photolarge','','images/TravelPhoto2.jpg',1)"/></div>
+      <div class="thumb"><img src="images/TravelPhoto3-sm.jpg"  alt="New Orleans Elegance" width="137" height="95" id="thumb3" onClick="MM_swapImage('photolarge','','images/travelphoto3.jpg',1)" /></div>
+      <div class="thumb"><img src="images/TravelPhoto4-sm.jpg"  alt="New Orleans Cemetary" width="137" height="95" id="thumb4" onClick="MM_swapImage('photolarge','','images/TravelPhoto4.jpg',1)" /></div>
+    </div>
+    
+    
+    <div id="bottomfilmdots"><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/><img src="images/film-dot-gray.png" width="15" height="15"  alt=""/></div>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Flex Layout Box Model</title>
+<style>
+@font-face {
+    font-family: 'quicksandregular';
+    src: url('../fonts/quicksand-regular-webfont.eot');
+    src: url('../fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/quicksand-regular-webfont.woff') format('woff'),
+         url('../fonts/quicksand-regular-webfont.ttf') format('truetype'),
+         url('../fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	font: 100% quicksandregular, Segoe, "Segoe UI", Verdana, sans-serif;
+	background: #333;
+	color: #FFF;
+	margin: 0;
+}
+h1 {
+	text-align: center;
+}
+div, p {
+	margin: 0;
+}
+
+#wrapper {
+	width: 80%;
+	margin: 0 auto;
+	background: #fff;
+	color: #333;
+}
+#container {
+	display: -ms-flex;
+	display: -moz-flex;
+	display: -webkit-flex;
+  	display: flex;
+		
+  	-ms-flex-flow: row-reverse wrap; 
+  	-moz-flex-flow: row-reverse wrap; 
+  	-webkit-flex-flow: row-reverse wrap; 
+  	flex-flow: row-reverse wrap; 
+}
+
+#container div {
+	border: 2px solid #000;
+	padding: 20px;
+	width: 100px;
+	margin: 10px;
+}
+
+#one {
+	background-color: #F69;
+	-ms-flex: 0 0 auto; 
+	-moz-flex: 0 0 auto; 
+	-webkit-flex: 0 0 auto; 
+	flex: 0 0 auto; 
+	width: 50px;
+}
+
+#two {
+	background-color: #B083E9;
+	-ms-flex: 1 1 auto; 
+	-moz-flex: 1 1 auto; 
+	-webkit-flex: 1 1 auto; 
+	flex: 1 1 auto; 
+}
+
+#three {
+	background-color: #4091EA;
+	-ms-flex: 1 1 auto; 
+	-moz-flex: 1 1 auto; 
+	-webkit-flex: 1 1 auto; 
+	flex: 1 1 auto; 
+}
+
+#four {
+	background-color: #393;
+	-ms-flex: 1 0 auto; 
+	-moz-flex: 1 0 auto; 
+	-webkit-flex: 1 0 auto; 
+	flex: 1 0 auto; 
+}
+
+#five {
+	background-color: #FF6;
+	-ms-flex: 4 0 auto; 
+	-moz-flex: 4 0 auto; 
+	-webkit-flex: 4 0 auto;
+	flex: 4 0 auto; 
+}
+</style>
+</head>
+
+<body>
+<h1>Flexible Layout Box Model</h1>
+<div id="wrapper">
+  <div id="container">
+    <div id="one">
+      <p>First Flex Item</p>
+    </div>
+    <div id="two">
+      <p>Second Flex Item</p>
+    </div>
+    <div id="three">
+      <p>Third Flex Item</p>
+    </div>
+    <div id="four">
+      <p>Fourth Flex Item</p>
+    </div>
+    <div id="five">
+      <p>Fifth Flex Item</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

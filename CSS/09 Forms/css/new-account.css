@@ -1,0 +1,63 @@
+/* ------ Pared Down Reset Code ----- */
+
+html, body, ul, ol, li, form, fieldset, legend {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 0;
+}
+fieldset, img {
+	border: 0;
+}
+legend {
+	color: #000;
+}
+input, textarea, select, button {
+	font-size: 100%;
+	line-height: 1.2;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+button {
+	width: auto;
+	overflow: visible;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	vertical-align: top;
+	font-weight: normal;
+}
+li {
+	list-style: none;
+}
+abbr, acronym {
+	border-bottom: .1em dotted;
+	cursor: help;
+}
+sup {
+	vertical-align: text-top;
+}
+sub {
+	vertical-align: text-bottom;
+}
+pre, code {
+	font-family: "Courier New", monospace, serif;
+	font-size: 100%;
+	line-height: 1.2;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+/* --- Elements ----------- */
+
+body {
+	color: #222;
+	background: #fff;
+	font: 100% Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
